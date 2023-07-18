@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 0;
+    margin: 0;
+    color: #36363f;
+    background: #f2e8cf;
+    background-size: 16px 16px;
+    font-family: "Euclid Circular A" , "Poppins";
+}
+.background{
+    position: fixed;
+    z-index: -1;
+    top: -100px;
+    left: -100px;
+    right: -100px;
+    height: 60vh;
+    rotate: -4deg;
+    background: #9c6644;
+}
+.card{
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    order: 2;
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 6px;
+    padding: 50px;
+    background: rgba(242, 232, 207, 0.2);
+    font-size: 125%;
+}
+.card:hover{
+    box-shadow: 3px 3px 33px 2px rgba(127, 85, 57 , 0.850) inset;
+    -webkit-box-shadow: 3px 3px 33px 2px rgba(127, 85, 57 , 0.850) inset;
+    -moz-box-shadow: 3px 3px 33px 2px rgba(127, 85, 57 , 0.850) inset;
+}
+.card.primary{
+    order: 1;
+}
+.card.primary var{
+    font-size: 60px;
+}
+p , h2{
+    margin: 0;
+}
+p:hover{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.438);
+}
+.card var{
+    color: #7f5539;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+.card var small{
+    font-size: 16px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px;
+}
+ul li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 6px 0;
+}
+ul li img{
+    width: 16px;
+}
+.card button{
+    display: grid;
+    place-items: center;
+    min-width: 200px;
+    padding: 14px 0;
+    border-radius: 6px;
+    border: 2px solid #7f5539;
+    background: transparent;
+    color: #7f5539;
+    font-size: inherit;
+    font-family: inherit;
+}
+.card button:hover{
+    box-shadow: 2px 2px 15px 2px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 2px 2px 15px 2px rgba(0,0,0,0.47);
+    -moz-box-shadow: 2px 2px 15px 2px rgba(0,0,0,0.47);
+}
+.card button.primary{
+    background: #7f5539;
+    color: #f7f7f7;
+}
+
+@media(width >= 960px){
+    body{
+        padding: 0;
+        flex-direction: row;
+    }
+    body,html{
+        height: 100%;
+    }
+    .card{
+        width: 300px;
+        max-width: 300px;
+        margin: 0;
+        font-size: 100%;
+    }
+    .card.primary{
+        order: 2;
+    }
+}
