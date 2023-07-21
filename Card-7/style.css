@@ -1,0 +1,63 @@
+body{
+    padding-top: 10rem;
+}
+div.cardfan{
+    width: 33%;
+    margin: 2rem auto;
+    position: relative;
+}
+div.cardfan img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    border: 12px solid #ffe;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
+    transform-origin: center 400px;
+    transition: all 1s linear;
+}
+div.cardfan img:first-child{
+    transform: rotate(5deg);
+}
+div.cardfan img:last-child{
+    transform: rotate(-5deg);
+}
+div.cardfan:hover img:first-child{
+    transform: rotate(25deg);
+}
+div.cardfan:hover img:last-child{
+    transform: rotate(-25deg);
+}
+img#aqueduct{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: url(#grayscale);
+    filter: gray;
+}
+img#aqueduct:hover{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    filter: none;
+}
+img#bike{
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    filter: url(#sepia);
+    background-color: #5e2612;
+    filter: alpha(opacity = 50);
+}
+img#bike:hover{
+    -webkit-filter: sepia(0);
+    filter: sepia(0);
+    filter: alpha(opacity = 100);
+    filter: none;
+}
+img#roma{
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    filter: url(#blur);
+}
+img#roma:hover{
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    filter: none;
+}
