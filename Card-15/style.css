@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo 2&family=Roboto:wght@300&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", cursive;
+}
+body{
+    background: #e6e8e6;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5rem 10rem;
+}
+.badge{
+    text-transform: uppercase;
+    color: #979dac;
+    letter-spacing: 1px;
+    font-size: 11px;
+}
+.heading{
+    font-size: 26px;
+    margin: 20px 0;
+}
+.card_group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pricing_card{
+    margin: 20px 30px;
+    height: 400px;
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.5s ease-in-out;
+    padding: 16px 14px;
+    border-radius: 10px;
+    border: 2px solid #979dac;
+}
+.pricing_card i{
+    color: #979dac;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    border-radius: 50%;
+    box-shadow: 0 0 34px -12px gray;
+}
+.pricing_card span{
+    color: #979dac;
+    margin: -10px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+.price{
+    font-size: 30px;
+    font-family: "Baloo 2";
+}
+.package_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+.package_list li{
+    list-style: none;
+    margin: 6px 0;
+    color: gray;
+    font-size: 14px;
+}
+.get_started_btn{
+    border: 2px solid #5c677d;
+    color: white;
+    background: linear-gradient(65deg, #979dac,#33415c);
+    padding: 8px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+.get_started_btn:hover{
+    background: transparent;
+    color: #001233;
+}
