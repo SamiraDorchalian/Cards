@@ -5,19 +5,16 @@ body{
     align-items: center;
     height: 100vh;
     justify-content: center;
-    background-color: #9a031e;
-}
+    background-color: #9a031e;}
 h1{
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 4px;
     color: #fb8b24;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    white-space: nowrap;
-}
+    white-space: nowrap;}
 .container{
-    text-align: center;
-}
+    text-align: center;}
 .btn{
     padding: 30px 50px;
     min-width: 200px;
@@ -35,11 +32,8 @@ h1{
     font-family: cursive;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    text-transform: capitalize;
-}
+    text-transform: capitalize;}
 .btn:hover{
-    color: #ffba08;
-}
+    color: #ffba08;}
 .btn:active{
-    background-size: 105%;
-}
+    background-size: 105%;}
